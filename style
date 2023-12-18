@@ -1,0 +1,244 @@
+/* General styles */
+body {
+  padding: 5% ;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Flexbox utility classes */
+.bundle,
+.parent,
+.bundleandsave,
+.title,
+.parent-box1,
+.parent-box3,
+.title2,
+.middle-box2,
+.middle-title {
+  display: flex;
+  gap: 15px;
+}
+
+.bundle,
+.bundleandsave {
+  justify-content: space-between;
+}
+
+.parent {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.bundleandsave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Specific element styles */
+.parent-box1,
+.parent-box3,
+.middle-box2 {
+  border-radius: 3.615px;
+  border: 0.904px solid #c8c8c8;
+  background: #fff;
+  padding: 2% 5%;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle-box2 {
+  border: 0px !important;
+  background: #f4fbf9 !important;
+  padding: 0px !important;
+}
+
+.middle {
+  height: 162px;
+  background: #f4fbf9;
+  border-radius: 3.62px;
+  border: 0.9px #007f61 solid;
+  padding: 2% 5%;
+}
+
+.title,
+.title2,
+.middle-title {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.middle-title {
+  flex-grow: 1;
+}
+
+/* Layout adjustments */
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 20%;
+  gap: 20px;
+}
+
+.dropdown {
+  gap: 8px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px; /* Adjust spacing between dropdowns */
+}
+
+.select-wrapper {
+  display: inline-block;
+}
+
+.dropdown-group {
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+/* Radio and product styles */
+.custom-radio {
+  width: 14.46px;
+  height: 14.46px;
+  border-radius: 9999px;
+  border: 0.9px #007f61 solid;
+  accent-color: #007f61;
+}
+
+.product-name,
+.price-info,
+.discounted-price,
+.original-price,
+.popular-label,
+.discount-rate,
+.discount-label,
+.total-price,
+.shipping-info,
+.cart-button {
+  color: black;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.product-name {
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.price-info,
+.discounted-price {
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.original-price {
+  opacity: 0.3;
+  font-size: 9.94px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.popular-label {
+  color: #007f61;
+  font-size: 12.65px;
+  font-weight: 600;
+}
+
+.discount-rate,
+.discount-label {
+  font-size: 12.65px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.total-price {
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.shipping-info {
+  opacity: 0.6;
+  color: #007f61;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-button {
+  width: 341px;
+  height: 48px;
+  background: #007f61;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+}
+
+.pumped {
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 5%;
+  }
+
+  .parent {
+    gap: 15px;
+  }
+
+  .parent-box1,
+  .parent-box3,
+  .middle-box2 {
+    padding: 5% 8%;
+  }
+
+  .title,
+  .title2,
+  .middle-title {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 200px) {
+  body {
+    padding: 3%;
+  }
+
+  .parent {
+    gap: 5px;
+  }
+
+  .parent-box1,
+  .parent-box3,
+  .middle-box2 {
+    padding: 3% 5%;
+  }
+}
